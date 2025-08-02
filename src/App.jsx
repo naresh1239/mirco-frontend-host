@@ -75,6 +75,9 @@ const App = () => {
     <div className="MainBox w-full min-h-screen flex justify-center items-center">
  <div className='flex w-[80%] h-[80vh] bg-white shadow-lg rounded-lg mx-auto overflow-hidden'>
  <div className="left w-[75%] bg-[#f0f0f0] p-10">
+ <div className='header flex justify-between items-center mb-2'>
+    <h1 className='text-[20px] font-bold'>Host</h1>
+  </div>
   <div className='header flex justify-between items-center mb-5'>
     <h1 className='text-[25px] font-bold'>Shopping cart</h1>
     <p1>items : {totalItem}</p1>
