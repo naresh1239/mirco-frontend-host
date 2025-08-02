@@ -1,0 +1,6 @@
+[[headers]]
+  for = "/assets/remoteEntry.js"
+  [headers.values]
+    Access-Control-Allow-Origin = "https://mirco-frontend-host.netlify.app"
+    Access-Control-Allow-Methods = "GET"
+    Access-Control-Allow-Headers = "Content-Type"
