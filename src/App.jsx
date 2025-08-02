@@ -62,9 +62,10 @@ const cartItems = [
 ];
 
 
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import List from './List'
-import Appjs from "remoteApp/App";
+// import Appjs from "remoteApp/App";
+const Appjs = React.lazy(() => import('remoteApp/App'));
 
 const App = () => {
   const [total, settotal] = useState(0)
@@ -98,7 +99,10 @@ const App = () => {
   </div>
   </div>
   <div className="right w-[30%] flex justify-center items-center">
- <Appjs/>
+    <Suspense fallback={<div>Loading remote app...</div>}>
+    <Appjs/>
+    </Suspense>
+
   </div>
   </div>
 </div>
